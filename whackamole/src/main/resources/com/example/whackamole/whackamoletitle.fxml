@@ -45,7 +45,7 @@
             </GridPane>
          </children>
       </Pane>
-      <Button layoutX="301.0" layoutY="438.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="200.0" text="Start">
+      <Button fx:id="startButton" layoutX="301.0" layoutY="438.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="200.0" text="Start">
          <font>
             <Font name="Bernard MT Condensed" size="42.0" />
          </font>

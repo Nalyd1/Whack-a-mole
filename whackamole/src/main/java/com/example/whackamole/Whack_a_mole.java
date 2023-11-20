@@ -13,7 +13,6 @@ public class Whack_a_mole extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamoletitle.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
     }
@@ -22,6 +21,4 @@ public class Whack_a_mole extends Application {
         launch();
     }
 
-    public void onHelloButtonClick(ActionEvent actionEvent) {
-    }
 }
