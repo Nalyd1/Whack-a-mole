@@ -11,14 +11,14 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" layoutX="217.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="365.0" text="Whack-a-mole" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="218.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="365.0" text="Whack-a-mole" textAlignment="CENTER">
          <font>
             <Font name="Bernard MT Condensed" size="51.0" />
          </font>
       </Label>
       <Label layoutX="369.0" layoutY="151.0" scaleX="3.5" scaleY="3.5" text="Game Over" />
-      <Button layoutX="361.0" layoutY="416.0" mnemonicParsing="false" scaleX="2.5" scaleY="2.5" text="Main Menu" />
-      <Button layoutX="377.0" layoutY="508.0" mnemonicParsing="false" scaleX="2.5" scaleY="2.5" text="Retry" />
+      <Button fx:id="retryButt" layoutX="361.0" layoutY="416.0" mnemonicParsing="false" scaleX="2.5" scaleY="2.5" text="Main Menu" />
+      <Button fx:id="menuButt" layoutX="377.0" layoutY="508.0" mnemonicParsing="false" scaleX="2.5" scaleY="2.5" text="Retry" />
       <Pane layoutX="286.0" layoutY="189.0" prefHeight="240.0" prefWidth="228.0">
          <children>
             <Label alignment="CENTER" layoutX="54.0" layoutY="1.0" prefHeight="17.0" prefWidth="121.0" text="Scoreboard">
