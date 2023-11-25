@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.whackamole.TitleController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label alignment="CENTER" layoutX="218.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="365.0" text="Whack-a-mole" textAlignment="CENTER">
          <font>
@@ -37,18 +37,14 @@
                   <Label alignment="CENTER" prefHeight="17.0" prefWidth="95.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" GridPane.rowIndex="2" />
                   <Label alignment="CENTER" prefHeight="17.0" prefWidth="98.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" GridPane.rowIndex="3" />
                   <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Label alignment="CENTER" prefHeight="17.0" prefWidth="98.0" text="Label" GridPane.rowIndex="4" />
                   <Label alignment="CENTER" prefHeight="17.0" prefWidth="99.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label prefHeight="17.0" prefWidth="31.0" text="Label" GridPane.rowIndex="3" />
                </children>
             </GridPane>
          </children>
       </Pane>
-      <Button fx:id="startButton" layoutX="301.0" layoutY="438.0" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="74.0" prefWidth="200.0" text="Start">
-         <font>
-            <Font name="Bernard MT Condensed" size="42.0" />
-         </font>
-      </Button>
+      <Button layoutX="377.0" layoutY="456.0" mnemonicParsing="false" onAction="#switchToPlayScreen" scaleX="4.0" scaleY="4.0" text="Start" />
    </children>
 </Pane>
