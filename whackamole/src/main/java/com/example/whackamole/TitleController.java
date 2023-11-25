@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 import javafx.fxml.Initializable;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 public class TitleController{
     private Scene scene;
@@ -31,15 +32,19 @@ public class TitleController{
     }
 
     public void switchToPlayScreen(ActionEvent event) throws IOException{
+        System.out.println("Switching to Play Screen");
         FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamolePlayScreen.fxml"));
         PlayScreenController playScreenController = new PlayScreenController();
         fxmlLoader.setController(playScreenController);
-        Scene scene = new Scene(fxmlLoader.load());
-        Parent root = FXMLLoader.load(getClass().getResource("whackamolePlayScreen.fxml"));
+        Parent root = fxmlLoader.load();
+        System.out.println("FXML Loaded");
+        Scene scene = new Scene(root);
+
         stage.setScene(scene);
         stage.show();
+        System.out.println("Scene set");
     }
-    public void switchToTitleSceen(ActionEvent event) throws IOException{
+    public void switchToTitleScreen(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("whackamoletitle.fxml"));
         scene = new Scene(root);
         stage.setScene(scene);
