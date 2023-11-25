@@ -11,8 +11,8 @@
             <Font name="Bernard MT Condensed" size="51.0" />
          </font>
       </Label>
-      <Label layoutX="346.0" layoutY="215.0" scaleX="2.3" scaleY="2.3" text="PickYour Dificulty" />
-      <Button layoutX="371.0" layoutY="423.0" mnemonicParsing="false" scaleX="3.0" scaleY="3.0" text="Start" />
+      <Label layoutX="346.0" layoutY="215.0" scaleX="2.3" scaleY="2.3" text="PickYour Difficulty" />
+      <Button layoutX="371.0" layoutY="423.0" mnemonicParsing="false" scaleX="3.0" scaleY="3.0" text="Start" onAction="#switchGameScreen" />
       <VBox fx:id="theVbox" layoutX="355.0" layoutY="259.0" prefHeight="64.0" prefWidth="77.0" scaleX="1.2" scaleY="1.2" spacing="5.0" />
    </children>
 </Pane>
