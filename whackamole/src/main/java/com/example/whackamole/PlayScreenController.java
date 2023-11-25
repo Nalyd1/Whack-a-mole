@@ -1,11 +1,9 @@
 package com.example.whackamole;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.fxml.FXML;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
@@ -38,6 +36,7 @@ public class PlayScreenController implements Initializable {
 
         // the vbox holds the buttons
         theVbox.getChildren().addAll(button1, button2, button3);
+
 
     }
 }
