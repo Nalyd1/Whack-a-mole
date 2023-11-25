@@ -53,7 +53,12 @@ public class PlayScreenController implements Initializable {
 
     }
     public void switchGameScreen(ActionEvent event) throws IOException { System.out.println("switchingToGameScreen");
-        FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamoleGameScreen.fxml"));
+        gameLoop gameLoop = new gameLoop();
+        gameLoop.start(stage);
+
+
+
+        /*FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamoleGameScreen.fxml"));
         gameController gameController = new gameController(stage);
         fxmlLoader.setController(gameController);
         Parent root = fxmlLoader.load();
@@ -62,7 +67,8 @@ public class PlayScreenController implements Initializable {
 
         stage.setScene(scene);
         stage.show();
-        System.out.println("Scene set");
+        System.out.println("Scene set");*/
+
 
     }
 }
