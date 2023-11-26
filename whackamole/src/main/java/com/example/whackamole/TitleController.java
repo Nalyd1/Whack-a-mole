@@ -43,18 +43,20 @@ public class TitleController{
         this.stage = stage;
     }
 
+    /**
+     * @author Sinclair DeYoung
+     * @date: 11/22/2023
+     * @section: CSC 331-001
+     * @purpose change the main screen to the play screen
+     */
     public void switchToPlayScreen(ActionEvent event) throws IOException{
-        System.out.println("Switching to Play Screen");
         FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamolePlayScreen.fxml"));
         PlayScreenController playScreenController = new PlayScreenController(stage);
         fxmlLoader.setController(playScreenController);
         Parent root = fxmlLoader.load();
-        System.out.println("FXML Loaded");
         Scene scene = new Scene(root);
-
         stage.setScene(scene);
         stage.show();
-        System.out.println("Scene set");
     }
     public void switchToTitleScreen(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("whackamoletitle.fxml"));
