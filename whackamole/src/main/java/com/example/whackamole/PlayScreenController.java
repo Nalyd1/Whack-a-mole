@@ -23,6 +23,13 @@ public class PlayScreenController implements Initializable {
     private Stage stage;
     private int difficulty;
 
+    /**
+     * @author Sinclair DeYoung
+     * @date: 11/22/2023
+     * @section: CSC 331-001
+     * @purpose initialize builds the hard medium and easy
+     * buttons for picking how the game will run
+     */
     @FXML
     private Label label;
     @FXML
