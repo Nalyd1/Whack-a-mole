@@ -15,11 +15,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 import javafx.fxml.Initializable;
+import javafx.scene.paint.Color;
 
+<<<<<<< Updated upstream
 import java.io.File;
+=======
+import java.awt.*;
+>>>>>>> Stashed changes
 import java.io.IOException;
 import java.util.ResourceBundle;
 import java.util.Scanner;
