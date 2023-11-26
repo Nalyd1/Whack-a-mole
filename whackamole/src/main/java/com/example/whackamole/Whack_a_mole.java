@@ -2,20 +2,11 @@ package com.example.whackamole;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
-import com.example.whackamole.TitleController;
-import javafx.fxml.FXML;
+;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
+
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Paint;
+
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -31,6 +22,7 @@ public class Whack_a_mole extends Application {
         // Screen 1 of the game (title)
         FXMLLoader fxmlLoader1 = new FXMLLoader(Whack_a_mole.class.getResource("whackamoletitle.fxml"));
         fxmlLoader1.setController(titleController);
+        //Scene scene1 = new Scene(fxmlLoader1.load());
 
         // Screen 2 of the game (playScreen)
         FXMLLoader fxmlLoader2 = new FXMLLoader(Whack_a_mole.class.getResource("whackamolePlayScreen.fxml"));

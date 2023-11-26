@@ -32,6 +32,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+
+
 import java.io.IOException;
 import java.util.Random;
 import java.util.Timer;
@@ -50,6 +55,7 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
 
     public void start(Stage stage, int difficulty) throws IOException {
         gameController = new gameController(stage);
+
 
 
         // Loads the scene into a Fxml loader
@@ -86,6 +92,22 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
     public static void main(String[] args) {launch(args);}
 
 
+    //Test Stuff
+    Image hole = new Image("hole.jpg", 100, 100, false, false);
+    Image mole = new Image("mole.jpg", 100, 100, false, false);
+    ImageView holeView = new ImageView(hole);
+    ImageView holeView2 = new ImageView(hole);
+    ImageView holeView3 = new ImageView(hole);
+    ImageView holeView4 = new ImageView(hole);
+    ImageView holeView5 = new ImageView(hole);
+    ImageView holeView6 = new ImageView(hole);
+    ImageView holeView7 = new ImageView(hole);
+    ImageView holeView8 = new ImageView(hole);
+    ImageView holeView9 = new ImageView(hole);
+
+
+
+    ImageView moleView = new ImageView(mole);
     // Function for spawning a random mole
     public void randomMole(){
 
@@ -99,47 +121,47 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
         switch (moleNum){
 
             case 1:
-                gameController.mole_1.setText("mole");
+                gameController.mole_1.setGraphic(moleView);
                 gameController.setMole1(true);
                 break;
 
             case 2:
-                gameController.mole_2.setText("mole");
+                gameController.mole_2.setGraphic(moleView);
                 gameController.setMole2(true);
                 break;
 
             case 3:
-                gameController.mole_3.setText("mole");
+                gameController.mole_3.setGraphic(moleView);
                 gameController.setMole3(true);
                 break;
 
             case 4:
-                gameController.mole_4.setText("mole");
+                gameController.mole_4.setGraphic(moleView);
                 gameController.setMole4(true);
                 break;
 
             case 5:
-                gameController.mole_5.setText("mole");
+                gameController.mole_5.setGraphic(moleView);;
                 gameController.setMole5(true);
                 break;
 
             case 6:
-                gameController.mole_6.setText("mole");
+                gameController.mole_6.setGraphic(moleView);
                 gameController.setMole6(true);
                 break;
 
             case 7:
-                gameController.mole_7.setText("mole");
+                gameController.mole_7.setGraphic(moleView);
                 gameController.setMole7(true);
                 break;
 
             case 8:
-                gameController.mole_8.setText("mole");
+                gameController.mole_8.setGraphic(moleView);
                 gameController.setMole8(true);
                 break;
 
             case 9:
-                gameController.mole_9.setText("mole");
+                gameController.mole_9.setGraphic(moleView);
                 gameController.setMole9(true);
                 break;
         }
@@ -149,15 +171,15 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
     // Function that clears the board of all moles
     // This function also sets the booleans for all moles to false
     public void clearBoard(){
-        gameController.mole_1.setText("1");
-        gameController.mole_2.setText("2");
-        gameController.mole_3.setText("3");
-        gameController.mole_4.setText("4");
-        gameController.mole_5.setText("5");
-        gameController.mole_6.setText("6");
-        gameController.mole_7.setText("7");
-        gameController.mole_8.setText("8");
-        gameController.mole_9.setText("9");
+        gameController.mole_1.setGraphic(holeView);
+        gameController.mole_2.setGraphic(holeView2);
+        gameController.mole_3.setGraphic(holeView3);
+        gameController.mole_4.setGraphic(holeView4);
+        gameController.mole_5.setGraphic(holeView5);
+        gameController.mole_6.setGraphic(holeView6);
+        gameController.mole_7.setGraphic(holeView7);
+        gameController.mole_8.setGraphic(holeView8);
+        gameController.mole_9.setGraphic(holeView9);
         gameController.setMole1(false);
         gameController.setMole2(false);
         gameController.setMole3(false);
@@ -217,13 +239,13 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
         }
     };
 
-    // Gameover function
+    // Game over function
     // This function changes screens to the end screen
     public void gameOver() throws IOException {
 
         // Opens the end screen FXML and sets the controller to the endController
         FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamoleEndScreen.fxml"));
-        endController endController = new endController(this.stage);
+        endController endController = new endController(this.stage, gameController.getScore());
         fxmlLoader.setController(endController);
         Parent root = fxmlLoader.load();
         System.out.println("FXML Loaded");

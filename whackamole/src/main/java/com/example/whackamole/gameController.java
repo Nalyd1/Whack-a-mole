@@ -86,7 +86,6 @@ public class gameController {
     @FXML
     public void hit1(ActionEvent event) {
         if (isMole1){
-            mole_1.setText("1");
             setMole1(false);
             score += 100;
             playerScore.setText("" + score);
@@ -96,7 +95,6 @@ public class gameController {
     @FXML
     public void hit2(ActionEvent event) {
         if (isMole2){
-            mole_2.setText("2");
             setMole2(false);
             score += 100;
             playerScore.setText("" + score);
@@ -106,7 +104,6 @@ public class gameController {
     @FXML
     public void hit3(ActionEvent event) {
         if (isMole3){
-            mole_3.setText("3");
             setMole3(false);
             score += 100;
             playerScore.setText("" + score);
@@ -115,7 +112,6 @@ public class gameController {
     @FXML
     public void hit4(ActionEvent event) {
         if (isMole4){
-            mole_4.setText("4");
             setMole4(false);
             score += 100;
             playerScore.setText("" + score);
@@ -124,7 +120,6 @@ public class gameController {
     @FXML
     public void hit5(ActionEvent event) {
         if (isMole5){
-            mole_5.setText("5");
             setMole5(false);
             score += 100;
             playerScore.setText("" + score);
@@ -133,7 +128,6 @@ public class gameController {
     @FXML
     public void hit6(ActionEvent event) {
         if (isMole6){
-            mole_6.setText("6");
             setMole6(false);
             score += 100;
             playerScore.setText("" + score);
@@ -142,7 +136,6 @@ public class gameController {
     @FXML
     public void hit7(ActionEvent event) {
         if (isMole7){
-            mole_7.setText("7");
             setMole7(false);
             score += 100;
             playerScore.setText("" + score);
@@ -151,7 +144,6 @@ public class gameController {
     @FXML
     public void hit8(ActionEvent event) {
         if (isMole8){
-            mole_8.setText("8");
             setMole8(false);
             score += 100;
             playerScore.setText("" + score);
@@ -159,8 +151,7 @@ public class gameController {
     }
     @FXML
     public void hit9(ActionEvent event) {
-        if (isMole9){
-            mole_9.setText("9");
+        if (isMole9){;
             setMole9(false);
             score += 100;
             playerScore.setText("" + score);
@@ -178,4 +169,7 @@ public class gameController {
     public void setMole7(boolean mole7) {isMole7 = mole7;}
     public void setMole8(boolean mole8) {isMole8 = mole8;}
     public void setMole9(boolean mole9) {isMole9 = mole9;}
+
+    // This method returns the player's final score, for high score displaying purposes
+    public int getScore() {return score;}
 }
