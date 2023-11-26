@@ -36,16 +36,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="98.0" text="Label" GridPane.columnIndex="1" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="95.0" text="Label" GridPane.rowIndex="1" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="95.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" GridPane.rowIndex="2" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="98.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="98.0" text="Label" GridPane.rowIndex="4" />
-                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="99.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                   <Label fx:id="highestScoreName" alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" />
+                   <Label fx:id="highestScore" alignment="CENTER" prefHeight="17.0" prefWidth="98.0" text="Label" GridPane.columnIndex="1" />
+                   <Label fx:id="secondHighestScoreName" alignment="CENTER" prefHeight="17.0" prefWidth="95.0" text="Label" GridPane.rowIndex="1" />
+                   <Label fx:id="secondHighestScore" alignment="CENTER" prefHeight="17.0" prefWidth="95.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                   <Label fx:id="thirdHighestScoreName" alignment="CENTER" prefHeight="17.0" prefWidth="96.0" text="Label" GridPane.rowIndex="2" />
+                   <Label fx:id="thirdHighestScore" alignment="CENTER" prefHeight="17.0" prefWidth="98.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
          </children>
