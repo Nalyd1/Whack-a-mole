@@ -23,11 +23,7 @@ import javafx.stage.Stage;
 import javafx.fxml.Initializable;
 import javafx.scene.paint.Color;
 
-<<<<<<< Updated upstream
 import java.io.File;
-=======
-import java.awt.*;
->>>>>>> Stashed changes
 import java.io.IOException;
 import java.util.ResourceBundle;
 import java.util.Scanner;

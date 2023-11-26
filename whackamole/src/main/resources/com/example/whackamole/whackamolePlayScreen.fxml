@@ -4,24 +4,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<<<<<<< Updated upstream
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-=======
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: D99058;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
->>>>>>> Stashed changes
-   <children>
-      <Label alignment="CENTER" layoutX="218.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="365.0" text="Whack-a-mole" textAlignment="CENTER">
-         <font>
-            <Font name="Bernard MT Condensed" size="51.0" />
-         </font>
-      </Label>
-<<<<<<< Updated upstream
-      <Label layoutX="346.0" layoutY="215.0" scaleX="2.3" scaleY="2.3" text="PickYour Difficulty" />
-      <Button layoutX="371.0" layoutY="423.0" mnemonicParsing="false" scaleX="3.0" scaleY="3.0" text="Start" onAction="#switchGameScreen" />
-=======
-      <Label layoutX="346.0" layoutY="215.0" scaleX="2.3" scaleY="2.3" text="Pick Your Dificulty" />
-      <Button layoutX="371.0" layoutY="423.0" style="-fx-background-color: #374f2f;" mnemonicParsing="false" scaleX="3.0" scaleY="3.0" text="PLAY" />
->>>>>>> Stashed changes
-      <VBox fx:id="theVbox" layoutX="355.0" layoutY="259.0" prefHeight="64.0" prefWidth="77.0" scaleX="1.2" scaleY="1.2" spacing="5.0" />
-   </children>
+    <children>
+        <Label alignment="CENTER" layoutX="218.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="365.0" text="Whack-a-mole" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="51.0" />
+            </font>
+        </Label>
+        <Label layoutX="346.0" layoutY="215.0" scaleX="2.3" scaleY="2.3" text="PickYour Difficulty" />
+        <Button layoutX="371.0" layoutY="423.0" mnemonicParsing="false" scaleX="3.0" scaleY="3.0" text="Start" onAction="#switchGameScreen" />
+        <VBox fx:id="theVbox" layoutX="355.0" layoutY="259.0" prefHeight="64.0" prefWidth="77.0" scaleX="1.2" scaleY="1.2" spacing="5.0" />
+    </children>
 </Pane>
