@@ -31,7 +31,6 @@ public class Whack_a_mole extends Application {
         // Screen 1 of the game (title)
         FXMLLoader fxmlLoader1 = new FXMLLoader(Whack_a_mole.class.getResource("whackamoletitle.fxml"));
         fxmlLoader1.setController(titleController);
-        //Scene scene1 = new Scene(fxmlLoader1.load());
 
         // Screen 2 of the game (playScreen)
         FXMLLoader fxmlLoader2 = new FXMLLoader(Whack_a_mole.class.getResource("whackamolePlayScreen.fxml"));
