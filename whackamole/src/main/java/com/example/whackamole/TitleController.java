@@ -34,7 +34,7 @@ public class TitleController{
     public void switchToPlayScreen(ActionEvent event) throws IOException{
         System.out.println("Switching to Play Screen");
         FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamolePlayScreen.fxml"));
-        PlayScreenController playScreenController = new PlayScreenController();
+        PlayScreenController playScreenController = new PlayScreenController(stage);
         fxmlLoader.setController(playScreenController);
         Parent root = fxmlLoader.load();
         System.out.println("FXML Loaded");
