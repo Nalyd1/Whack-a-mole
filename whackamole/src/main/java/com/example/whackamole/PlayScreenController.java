@@ -40,7 +40,7 @@ public class PlayScreenController implements Initializable {
         text.setMaxWidth(100);
 
         // making a group
-        ToggleGroup group = new ToggleGroup();
+        group = new ToggleGroup();
 
         // adds the buttons to a group so only one could be picked
         button1.setToggleGroup(group);
@@ -52,9 +52,17 @@ public class PlayScreenController implements Initializable {
 
 
     }
+    private ToggleGroup group;
     public void switchGameScreen(ActionEvent event) throws IOException { System.out.println("switchingToGameScreen");
         gameLoop gameLoop = new gameLoop();
-        gameLoop.start(stage);
+        RadioButton Toggled = (RadioButton) group.getSelectedToggle();
+        int difficulty=1000;
+        if (Toggled==null) {difficulty = 1000;}
+        else if (Toggled.getText().equals("Easy")) {difficulty = 2000;}
+        else if (Toggled.getText().equals("Medium")) {difficulty = 1000;}
+        else if (Toggled.getText().equals("Hard")) {difficulty = 500;}
+        gameLoop.start(stage, difficulty);
+
 
 
 

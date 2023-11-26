@@ -45,7 +45,10 @@ public class gameLoop extends Application {
     // Base time (30 seconds)
     private int timeLeft = 30;
 
-    public void start(Stage stage) throws IOException {
+public void start(Stage stage) throws IOException {this.start(stage, 1000);}
+
+
+    public void start(Stage stage, int difficulty) throws IOException {
         gameController = new gameController(stage);
 
 
@@ -72,7 +75,7 @@ public class gameLoop extends Application {
         // The period changes the time in between each run
         // In the future we can hook this up to the difficulty with a variable and control how long the moles stay on screen
         Timer timer = new Timer();
-        timer.schedule(countdown,0,1000);
+        timer.schedule(countdown,0,difficulty);
     }
 
     // Main method ignore
