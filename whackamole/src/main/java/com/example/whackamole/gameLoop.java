@@ -66,6 +66,10 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
             e.printStackTrace();
         }
 
+
+        // Sets the global stage variable
+        this.stage = stage;
+
         // Runs the first instance of the game board
         // Clears the board and then spawns the first mole
         clearBoard();
@@ -173,6 +177,7 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
         @Override
         public void run() {
 
+
             // This call needs to be here
             // If this call is removed and the Timer task is ran without it the GUI will crash everytime
             // This allows for the GUI and the game backend to run on different threads at the same time
@@ -213,8 +218,19 @@ public void start(Stage stage) throws IOException {this.start(stage, 1000);}
     };
 
     // Gameover function
-    // This function should change screens to the end screen and run the score controller to see if the user beat a highscore
-    // Function has not been implemented yet
+    // This function changes screens to the end screen
     public void gameOver() throws IOException {
+
+        // Opens the end screen FXML and sets the controller to the endController
+        FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamoleEndScreen.fxml"));
+        endController endController = new endController(this.stage);
+        fxmlLoader.setController(endController);
+        Parent root = fxmlLoader.load();
+        System.out.println("FXML Loaded");
+        Scene scene = new Scene(root);
+
+        this.stage.setScene(scene);
+        this.stage.show();
     }
+
 }

@@ -24,6 +24,7 @@ public class Whack_a_mole extends Application {
     private TitleController titleController;
     private Stage stage;
     @Override
+
     public void start(Stage stage) throws IOException {
         titleController = new TitleController(stage);
 

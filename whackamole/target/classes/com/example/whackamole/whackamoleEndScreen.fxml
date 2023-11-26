@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<Pane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: orange;" stylesheets="@../../../../java/com/example/whackamole/styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label alignment="CENTER" layoutX="218.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="365.0" text="Whack-a-mole" textAlignment="CENTER">
          <font>
@@ -12,8 +16,8 @@
          </font>
       </Label>
       <Label layoutX="369.0" layoutY="151.0" scaleX="3.5" scaleY="3.5" text="Game Over" />
-      <Button fx:id="retryButt" layoutX="361.0" layoutY="416.0" mnemonicParsing="false" scaleX="2.5" scaleY="2.5" text="Main Menu" />
-      <Button fx:id="menuButt" layoutX="377.0" layoutY="508.0" mnemonicParsing="false" scaleX="2.5" scaleY="2.5" text="Retry" />
+      <Button fx:id="menuButt" layoutX="361.0" layoutY="416.0" mnemonicParsing="false" onAction="#menu" scaleX="2.5" scaleY="2.5" text="Main Menu" />
+      <Button fx:id="retryButt" layoutX="377.0" layoutY="508.0" mnemonicParsing="false" onAction="#retry" scaleX="2.5" scaleY="2.5" text="Retry" />
       <Pane layoutX="286.0" layoutY="189.0" prefHeight="240.0" prefWidth="228.0">
          <children>
             <Label alignment="CENTER" layoutX="54.0" layoutY="1.0" prefHeight="17.0" prefWidth="121.0" text="Scoreboard">

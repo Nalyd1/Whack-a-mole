@@ -21,6 +21,7 @@ public class PlayScreenController implements Initializable {
         this.stage = stage;
     }
     private Stage stage;
+    private int difficulty;
 
     @FXML
     private Label label;
@@ -64,18 +65,6 @@ public class PlayScreenController implements Initializable {
         gameLoop.start(stage, difficulty);
 
 
-
-
-        /*FXMLLoader fxmlLoader = new FXMLLoader(Whack_a_mole.class.getResource("whackamoleGameScreen.fxml"));
-        gameController gameController = new gameController(stage);
-        fxmlLoader.setController(gameController);
-        Parent root = fxmlLoader.load();
-        System.out.println("FXML Loaded");
-        Scene scene = new Scene(root);
-
-        stage.setScene(scene);
-        stage.show();
-        System.out.println("Scene set");*/
 
 
     }
